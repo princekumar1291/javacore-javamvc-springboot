@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd" >
+
+    <!--<bean class="com.akki.autowiring.using.xml.Address" name="address" p:city="Ahmedabad" p:street="Ratan-pol" />-->
+    <bean class="com.akki.autowiring.using.xml.Address" name="a1" p:city="Ahmedabad" p:street="Ratan-pol" />
+    <bean class="com.akki.autowiring.using.xml.Address" name="address" p:city="Kadi" p:street="Pir-bordi" />
+
+    <!--<bean class="com.akki.autowiring.using.xml.Emp" name="e1" autowire="byName">--> <!--no ref tag or attribute required-->
+        <!--it will find for address named reference-->
+    <!--<bean class="com.akki.autowiring.using.xml.Emp" name="e1" autowire="byType">-->
+        <!--it won't look for address named reference. but it'll look for Address typed bean.
+            but problem occurs when two Address typed bean comes(throws an exception). so, use wisely-->
+    <bean class="com.akki.autowiring.using.xml.Emp" name="e1" autowire="constructor"> <!--it will use parameterized Address() constructor-->
+    </bean>
+
+</beans>

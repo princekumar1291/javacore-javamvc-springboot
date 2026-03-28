@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd" >
+
+    <!--one way-->
+    <bean class="com.akki.ci.Certi" name="cer1">
+        <constructor-arg value="Java with Spring framework" />
+    </bean>
+    <bean class="com.akki.ci.Person" name="person1">
+        <constructor-arg>
+            <value>Akash</value>    <!--value as a tag or as an element-->
+        </constructor-arg>
+        <constructor-arg value="123456" />      <!--value as an attribute-->
+        <constructor-arg ref="cer1" />
+    </bean>
+
+    <!--another way-->
+    <bean class="com.akki.ci.Certi" name="cer2" c:name="Java with Spring-boot framework" />
+    <bean class="com.akki.ci.Person" name="person2" c:name="Akki" c:personId="654321" c:certi-ref="cer2" />
+
+</beans>

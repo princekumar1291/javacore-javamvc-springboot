@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd" >
+
+    <bean class="com.akki.collections.Emp" name="emp1">
+        <property name="name" value="akki" />
+        <property name="phones">
+            <!--list can have duplicate value-->
+            <list>
+                <value>4567812480</value>
+                <value>9135488145</value>
+                <value />   <!--this will store empty value in a list-->
+                <value>8712316554</value>
+                <null />
+                <value>9135488145</value>   <!--this will print again-->
+            </list>
+        </property>
+        <property name="address">
+            <!--set can't have duplicate values-->
+            <set>
+                <value>Ahmedabad</value>
+                <value>Mahesana</value>
+                <value>banglore</value>
+                <null/>
+                <value>Mahesana</value>     <!--This won't be printed again-->
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="2months" />
+                <entry key="python" value="1month" />
+                <entry key="js" value="3months" />
+            </map>
+        </property>
+        <property name="props">
+            <props>
+                <prop key="name">Akash</prop>
+                <prop key="nick-name">akki</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean class="com.akki.collections.Emp" name="emp2">
+        <property name="name" value="akki" />
+        <property name="phones">
+            <value>4567812480</value>       <!--<list> isn't required to mention for a single entry-->
+        </property>
+        <property name="address">
+            <set>
+                <!--for no entries or for an empty set-->
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="2months" />
+                <entry key="python" value="1month" />
+                <entry key="js" value="3months" />
+            </map>
+        </property>
+        <property name="props">
+            <props />
+        </property>
+    </bean>
+
+</beans>

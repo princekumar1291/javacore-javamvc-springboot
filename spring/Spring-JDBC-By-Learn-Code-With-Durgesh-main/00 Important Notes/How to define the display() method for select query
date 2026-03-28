@@ -1,0 +1,40 @@
+# Tell me how to write the display method?
+```java 
+public void display() {
+	String selectQuery="SELECT * FROM Teacher";
+	this.jdbcTemplate.execute(selectQuery);
+}
+```
+
+
+The code you've written for the `display` method can execute the query, but it won't show the results because `jdbcTemplate.execute()` is typically used for DDL or general SQL statements, not for retrieving and processing query results.
+
+To properly retrieve and display the records from the `Teacher` table, you should use `jdbcTemplate.query()` or `jdbcTemplate.queryForList()` methods. Here's how you can modify your method:
+
+### Corrected `display` Method:
+```java
+public void display() {
+    String selectQuery = "SELECT * FROM Teacher";
+
+    // Using queryForList to fetch and print all records
+    List<Map<String, Object>> results = this.jdbcTemplate.queryForList(selectQuery);
+
+    // Displaying the records
+    for (Map<String, Object> row : results) {
+        System.out.println("ID: " + row.get("id"));
+        System.out.println("Name: " + row.get("name"));
+        System.out.println("Subject: " + row.get("subject"));
+        System.out.println("-------------------");
+    }
+}
+```
+
+### Key Changes:
+1. **`queryForList()`**: Fetches the query results as a list of maps, where each map represents a row (column names as keys).
+2. **Iterate and Display**: Loops through the list and prints each row's data.
+
+### Assumptions:
+- The `Teacher` table contains columns like `id`, `name`, `subject`, and `salary`. Adjust the keys in `row.get()` based on your actual column names.
+- You have already configured your `JdbcTemplate` bean.
+
+This way, your method not only executes the query but also retrieves and displays the results meaningfully.

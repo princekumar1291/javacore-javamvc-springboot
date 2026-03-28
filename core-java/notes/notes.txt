@@ -1,0 +1,633 @@
+* data type in java
+1. primitive data type (8 types) - primitive data types are the basic data types provided by the Java language. They are not objects and do not have any methods associated with them.
+  - int
+  - double
+  - char
+  - boolean
+  - byte
+  - short
+  - long
+  - float
+
+2. non-primitive data type (12 types) - non-primitive data types are the complex data types provided by the Java language. They are objects and have methods associated with them.
+  - String
+  - Integer
+  - Float
+  - Boolean
+  - List
+  - Tuple
+  - Dictionary
+  - Set
+
+
+* Typecasting in java
+1. implicit typecasting - Implicit typecasting, also known as automatic type conversion, is when the Java compiler automatically converts a smaller data type to a larger data type without explicit instruction from the programmer. For example, converting an int to a double.
+2. explicit typecasting - Explicit typecasting, also known as manual type conversion, is when the programmer explicitly converts a larger data type to a smaller data type. For example, converting a double to an int.
+  - double to int
+  - int to double
+  - double to int
+  - int to double
+
+
+* Operators in java
+1. Arithmetic operators - Arithmetic operators are used to perform arithmetic operations on the data.
+  - +
+  - -
+  - *
+  - /
+  - %
+  - ++
+  - --
+
+2. Assignment operators - Assignment operators are used to assign values to the variables.
+  - =
+  - +=
+  - -=
+  - *=
+  - /=
+  - %=
+
+3. Comparison operators - Comparison operators are used to compare the data.
+  - ==
+  - !=
+  - >
+  - <
+  - >=
+  - <=
+
+4. Logical operators - Logical operators are used to perform logical operations on the data.
+  - &&
+  - ||
+  - !
+
+5. Bitwise operators - Bitwise operators are used to perform bitwise operations on the data.
+  - &
+  - |
+  - ^
+  - ~
+  - <<
+  - >>
+  - >>>
+
+6. Ternary operator - Ternary operator is used to perform a conditional operation on the data.
+  - ? :
+
+7. instanceof operator - instanceof operator is used to check if an object is an instance of a class.
+  - instanceof
+
+8. new operator - new operator is used to create a new object.
+  - new
+
+9. this operator - this operator is used to refer to the current object.
+  - this
+
+10. super operator - super operator is used to refer to the parent class.
+  - super
+
+11. instanceof operator - instanceof operator is used to check if an object is an instance of a class.
+  - instanceof
+
+
+* conditional statements in java
+1. if statement - if statement is used to execute a block of code if a condition is true.
+  - if
+  - if-else
+  - if-else-if
+  - switch
+
+2. loop statements - loop statements are used to execute a block of code multiple times.
+  - for
+  - while
+  - do-while
+  - foreach
+
+* arrays in java
+1. arrays are used to store multiple values in a single variable.
+   eg: int[] arr = new int[5]; // declaration of array with size 5
+   eg: int[] arr = {1, 2, 3, 4, 5}; // declaration of array with values
+
+2. array traversal - array traversal is used to traverse the array.
+  - for(int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i]);
+  }
+
+3. array sorting - array sorting is used to sort the array.
+  - Arrays.sort(arr);
+
+4. array searching - array searching is used to search the array.
+  - Arrays.binarySearch(arr, 3);
+
+5. array merging - array merging is used to merge the array.
+
+
+
+
+* Oops
+classes and objects in java
+  - class is a blueprint for an object.
+  - object is an instance of a class.
+
+1. inheritance in java
+  - inheritance is a mechanism in which one class acquires the properties of another class.
+
+2. polymorphism in java
+  - polymorphism is a mechanism in which one task is performed in different ways.
+
+3. encapsulation in java
+  - encapsulation is a mechanism in which the data and the methods that operate on the data are bundled together into a single unit.
+
+4. abstraction in java
+  - abstraction is a mechanism in which the implementation of the class is hidden and the user only sees the interface of the class.
+
+* Keywords in java
+1. new keyword - new keyword is used to create a new object at runtime.
+  - new
+
+2. this keyword - this keyword is used to refer to the current object.
+  - this
+
+3. super keyword - super keyword is used to refer to the parent class.
+  - super
+
+4. final keyword - final keyword is used to declare a constant.
+  - final
+
+5. static keyword - static keyword is used to declare a static variable or method.
+  - static
+
+6. constructor keyword - constructor keyword is used to declare a constructor.
+  - constructor
+  . name of the constructor should be the same as the name of the class
+  . constructor does not have a return type
+  . constructor can be overloaded
+  
+7. constructor overloading - constructor overloading is a mechanism in which multiple constructors are defined with different parameters.
+
+8. function overloading - function overloading is a mechanism in which multiple functions are defined with different parameters.
+
+9. method overriding - method overriding is a mechanism in which one method overrides another method.
+
+
+
+
+
+* Types of inheritance in java
+1. single inheritance - single inheritance is a mechanism in which one class inherits from another class.
+  - single inheritance
+
+2. multi-level inheritance - multi-level inheritance is a mechanism in which one class inherits from another class and that class inherits from another class.
+  - multi-level inheritance
+
+3. hierarchical inheritance - hierarchical inheritance is a mechanism in which one class inherits from multiple classes.
+  - hierarchical inheritance
+
+4. multiple inheritance - multiple inheritance is a mechanism in which one class inherits from multiple classes.
+  - multiple inheritance (not supported in java with the help of classes, but supported in java with the help of interfaces)
+
+5. hybrid inheritance - hybrid inheritance is a mechanism in which one class inherits from multiple classes and that class inherits from another class.
+  - hybrid inheritance
+
+5. cyclic inheritance - cyclic inheritance is a mechanism in which one class inherits from another class and that class inherits from the first class.
+  - cyclic inheritance (not supported in java)
+
+
+* abstraction class in java
+1. abstraction class is a class that is declared with the abstract keyword.
+  - abstraction class
+  . abstraction class cannot be instantiated
+  . it can only be used as a base class for other classes
+  . abstraction class can have abstract methods
+  . abstraction class can have non-abstract methods
+
+
+* interface in java
+1. interface is a collection of abstract methods.
+  - interface
+  . interface cannot be instantiated
+  . it can only be used as a base class for other classes
+  . interface can have abstract methods
+  . interface can have non-abstract methods
+  . interface can have static methods
+
+
+* polymorphism in java
+1. polymorphism is a mechanism in which one task is performed in different ways.
+2. Types of polymorphism in java
+  - compile time polymorphism - compile time polymorphism is a mechanism in which the method is chosen at compile time.
+    - method overloading
+  - runtime polymorphism - runtime polymorphism is a mechanism in which the method is chosen at runtime.
+    - method overriding
+
+
+
+import keyword for importing class in our class
+how to use class that are package
+1. using fully qualified name
+  mypack.start obj=new mypack.start();
+  javautil.scanner sc=new javautil.scanner();
+  java.net.ServerSocket ss=new java.net.ServerSocket();
+
+2. import single class
+  import mypack.start;
+  start obj=new start();
+
+  import javautil.scanner;
+  scanner sc=new scanner();
+
+  import java.net.ServerSocket;
+  ServerSocket ss=new ServerSocket();
+
+3. import all classes
+  import mypack.*;
+  start obj=new start();
+
+  scanner sc=new scanner();
+  ServerSocket ss=new ServerSocket();
+
+
+classpath- environment variable in java
+there are two ways to set classpath
+1. temporarily classpath in java
+  set classpath=C:\Users\YourUsername\Desktop\java\classes;
+2. user variable or System variable
+  for example when we are installing java in our system, we can set classpath in user variable or System variable so that we can use java in our system without setting classpath in every time we run java program.
+
+  
+
+create and extract a jar file in java
+  jar -cvf myjar.jar *    (this is for creating a jar file)
+  
+  jar -xvf myjar.jar    (this is for extracting a jar file)
+
+
+
+
+access modifiers in java
+private < default < protected < public
+
+| Modifier  | Same Class | Same Package Subclass | Same Package Non-Subclass | Different Package Subclass | Different Package Non-Subclass |
+| --------- | ---------- | --------------------- | ------------------------- | -------------------------- | ------------------------------ |
+| Private   | YES        | NO                    | NO                        | NO                         | NO                             |
+| Default   | YES        | YES                   | YES                       | NO                         | NO                             |
+| Protected | YES        | YES                   | YES                       | YES                        | NO                             |
+| Public    | YES        | YES                   | YES                       | YES                        | YES                            |
+
+private  → only inside class
+default  → inside package
+protected → package + subclass
+public   → everywhere
+ 
+Exception handling in java (to handle the compile time errors)
+Exception handling in java try, catch, finally, throw, throws (to handle the runtime errors) 
+1. try catch finally block
+try {
+  // code that may throw an exception
+} catch (ArithmeticException e) {
+  System.out.println("ArithmeticException: " + e.getMessage());
+}catch (ArithmeticException e) {
+  System.out.println("NumberFormatException: " + e.getMessage());
+} catch (Exception e) {
+  System.out.println("Exception: " + e.getMessage());
+} finally {
+  System.out.println("Finally block executed");
+}
+
+create a custom exception in java
+public class CustomException extends Exception {
+  public CustomException() {
+    super("Age is Invalid");
+  }
+  public CustomException(String message) {
+    super(message);
+  }
+}
+way to use in catch block
+throw new CustomException("CustomException: " + e.getMessage());
+
+
+try {
+  // code that may throw an exception
+  if(age<0) {
+    throw new CustomException("Age is Invalid");
+  }
+} catch (CustomException e) {
+    System.out.println("CustomException: " + e.getMessage());
+}catch (Exception e) {
+    System.out.println("Exception: " + e.getMessage());
+}finally {
+    System.out.println("Finally block executed");
+}   
+
+
+collection framework in java
+what is collection-> it is group of objects which are represented as single unit.
+what is framework-> it is set of classes and interfaces which are used to represent and manipulate the collection of objects.
+why we use collection framework-> it is used to store and manipulate group of objects. (package-> java.util )
+
+
+list of Interfaces in Collection framework in java (with definition and features):
+
+1. Collection (interface)
+   - Definition: Root interface of the collection hierarchy. It defines the basic operations for all collection types (except maps).
+   - Features: Base for List, Set, and Queue; supports methods like add, remove, clear, size, iterator.
+
+2. List (interface)
+   - Definition: Ordered collection (sequence) that allows duplicate elements. Elements are indexed.
+   - Features: Preserves insertion order, allows random access by index, permits duplicates, supports null elements.
+
+3. Set (interface)
+   - Definition: A collection that does not allow duplicate elements.
+   - Features: No duplicate elements, does not guarantee order, at most one null element (in some implementations).
+
+4. SortedSet (interface)
+   - Definition: A Set that maintains its elements in ascending order.
+   - Features: Elements automatically sorted, additional methods for range view.
+
+5. NavigableSet (interface)
+   - Definition: Extends SortedSet with navigation methods for closest matches.
+   - Features: Methods for lower, floor, ceiling, higher; supports descending order view.
+
+6. Queue (interface)
+   - Definition: Used to hold multiple elements prior to processing, typically in FIFO order.
+   - Features: Supports insertion, removal, and inspection; supports different queue types like priority queues, deques.
+
+7. Deque (interface)
+   - Definition: Double-ended queue allowing insertion and removal from both ends.
+   - Features: Supports stack and queue operations; efficient manipulation at both ends.
+
+8. Map (interface)
+   - Definition: An object that maps keys to values; does not extend Collection interface.
+   - Features: No duplicate keys, each key maps to at most one value, allows one null key (in some implementations) and multiple null values.
+
+9. SortedMap (interface)
+   - Definition: A Map that maintains keys in ascending order.
+   - Features: Sorted keys, range view operations.
+
+10. NavigableMap (interface)
+    - Definition: Extends SortedMap with navigation methods for closest matches by key.
+    - Features: Methods for lowerKey, floorKey, ceilingKey, higherKey; supports descending map view.
+
+Important classes of Collection framework (with definition and features):
+
+1. ArrayList (class)
+   - Definition: Resizable array implementation of List interface.
+   - Features: Fast random access, maintains insertion order, allows duplicates & nulls, slower insert/remove in middle.
+
+2. LinkedList (class)
+   - Definition: Doubly-linked list implementation of List and Deque interfaces.
+   - Features: Fast at adding/removing elements at ends, slow random access, allows duplicates & nulls.
+
+3. Vector (class)
+   - Definition: Synchronized, resizable array implementation of List.
+   - Features: Thread-safe, slightly slower due to synchronization, preserves insertion order.
+
+4. Stack (class)
+   - Definition: Subclass of Vector; implements stack (LIFO) operations.
+   - Features: push, pop, peek methods; thread-safe.
+
+5. HashSet (class)
+   - Definition: Implements Set, backed by a hash table.
+   - Features: No duplicate elements, no guaranteed order, allows one null element.
+
+6. LinkedHashSet (class)
+   - Definition: Hash table and linked list for Set; maintains insertion order.
+   - Features: No duplicates, preserves insertion order, one null element allowed.
+
+7. TreeSet (class)
+   - Definition: Implements NavigableSet, backed by red-black tree.
+   - Features: Sorted order, no duplicates, no nulls, higher retrieval cost.
+
+8. PriorityQueue (class)
+   - Definition: Queue implementation with elements ordered by priority.
+   - Features: Not thread-safe, no nulls, allows duplicates, orders elements via Comparable or Comparator.
+
+9. HashMap (class)
+   - Definition: Implements Map, backed by a hash table.
+   - Features: No duplicate keys, allows one null key and multiple null values, no order maintained.
+
+10. LinkedHashMap (class)
+    - Definition: HashMap with maintained insertion order.
+    - Features: Predictable iteration order, one null key, multiple null values.
+
+11. TreeMap (class)
+    - Definition: Implements NavigableMap, keys sorted via natural ordering or Comparator.
+    - Features: No null keys, sorted order, allows null values.
+
+12. Hashtable (class)
+    - Definition: Legacy, synchronized Map implementation.
+    - Features: Thread-safe, no null keys or values, slower due to synchronization.
+
+Collection Hierarchy in Java:
+- Collection (interface)
+    - List (interface)
+        - ArrayList (class)
+        - LinkedList (class)
+        - Vector (class)
+        - Stack (class)
+    - Set (interface)
+        - HashSet (class)
+        - LinkedHashSet (class)
+        - SortedSet (interface)
+            - NavigableSet (interface)
+                - TreeSet (class)
+    - Queue (interface)
+        - PriorityQueue (class)
+        - Deque (interface)
+            - ArrayDeque (class)
+- Map (interface)
+    - HashMap (class)
+    - LinkedHashMap (class)
+    - SortedMap (interface)
+        - NavigableMap (interface)
+            - TreeMap (class)
+    - Hashtable (class)
+
+Note:
+- Collection does not include Map, but both are part of Collection Framework.
+- Most classes and interfaces are in the package java.util
+
+
+
+
+
+
+
+
+Collections in Java
+Collections in Java are framework of classes and interfaces that provide a standardized way to store, manipulate, and retrieve groups of objects. They're part of the Java Collections Framework (JCF) introduced in Java 1.2.
+
+                    Iterable
+                       |
+                   Collection
+                       |
+        +--------------+--------------+
+        |              |              |
+      List           Set           Queue
+        |              |              |
+    ArrayList      HashSet      PriorityQueue
+    LinkedList     TreeSet      LinkedList
+    Vector         LinkedHashSet   Deque
+
+Implementations:
+ArrayList - Fast random access, slow insertion/deletion
+LinkedList - Fast insertion/deletion, slow random access
+Vector - Synchronized version of ArrayList (legacy)
+
+List<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
+list.add("Java"); // duplicates allowed
+
+Set<String> set = new HashSet<>();
+set.add("Java");
+set.add("Python");
+set.add("Java"); // duplicate ignored, size = 2
+
+Queue<String> queue = new LinkedList<>();
+queue.offer("First");
+queue.offer("Second");
+String element = queue.poll(); // removes "First"
+
+Map<String, Integer> map = new HashMap<>();
+map.put("Java", 1);
+map.put("Python", 2);
+Integer value = map.get("Java"); // returns 1
+
+            Map<K,V>
+               |
+      +--------+--------+
+      |                 |
+   HashMap          SortedMap
+      |                 |
+ LinkedHashMap       TreeMap
+
+
+
+type safe and uptype safe ArrayList
+type safe ArrayList is a ArrayList that only stores objects of a specific type.
+uptype safe ArrayList is a ArrayList that can store objects of any type.
+
+List<String> list = new ArrayList<>();
+list.add("Java");
+list.add("Python");
+list.add("Java"); // duplicates allowed
+
+List<Object> list = new ArrayList<>();
+list.add("Java");
+list.add(1);
+list.add(true);
+
+
+traversal of ArrayList
+for(int i = 0; i < list.size(); i++) {
+  System.out.println(list.get(i));
+}
+
+for(Object obj : list) {
+  System.out.println(obj);
+}
+
+forEach loop in ArrayList
+list.forEach(System.out::println);
+
+stringbuffer in java
+StringBuffer sb = new StringBuffer("Hello");
+sb.reverse();
+
+vector.forEach(e->{
+  System.out.println(e);
+  System.out.println("Geeks for Geeks");
+});
+
+
+map example in java
+Map<String, Integer> map = new HashMap<>();
+map.put("Java", 1);
+map.put("Python", 2);
+Integer value = map.get("Java"); // returns 1
+
+map.forEach((key, value) -> {
+  System.out.println(key + " " + value);
+});
+
+
+
+generic class
+public class generic {
+  public static void main(String[] args) {
+    System.out.println("Generic Example");
+    GenericExample<String> genericExample = new GenericExample<>("Hello");
+    System.out.println(genericExample.getData());
+    genericExample.setData("World");
+    System.out.println(genericExample.getData());
+  }
+}
+class GenericExample<T> {
+  private T data;
+  public GenericExample(T data) {
+    this.data = data;
+  }
+  public T getData() {
+    return data;
+  }
+  public void setData(T data) {
+    this.data = data;
+  }
+}
+
+what is thread in java
+thread is a lightweight sub-process that can run concurrently with other threads.
+
+multithreading in java
+1. multithreading is a mechanism in which multiple threads are created to execute multiple tasks concurrently.
+
+runnable,thread class in java
+runnable interface is used to create a thread by implementing the run method.
+thread class is used to create a thread by extending the thread class.
+
+class Thread1 implements Runnable {
+  public void run() {
+    System.out.println("Thread is running");
+  }
+}
+
+class Thread2 extends Thread {
+  public void run() {
+    System.out.println("Thread is running");
+  }
+}
+
+public class thread {
+  public static void main(String[] args) {
+    Thread1 myThread = new Thread1();
+    Thread2 myThread2 = new Thread2();
+    Thread thread = new Thread(myThread);
+    thread.start();
+    Thread thread2 = new Thread(myThread2);
+    thread2.start();
+  }
+}
+
+
+life cycle of a thread
+1. new
+2. runnable
+3. running
+4. blocked
+5. terminated
+
+thread operations in java
+1. start() - starts the thread
+2. run() - executes the thread
+3. stop() - stops the thread
+4. sleep() - sleeps the thread
+5. join() - joins the thread
+6. wait() - waits for the thread to finish
+7. notify() - notifies the thread to wake up
+8. notifyAll() - notifies all the threads to wake up
+9. yield() - yields the thread
+10. isAlive() - checks if the thread is alive
+
+Demon Thread in java
+Demon thread is a thread that runs in the background and does not prevent the program from exiting.
+
